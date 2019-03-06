@@ -4,6 +4,9 @@
 
 [Pascal VOC Dataset Mirror](https://pjreddie.com/projects/pascal-voc-dataset-mirror/)
 
+[get_COCO_dataset](https://github.com/pjreddie/darknet/blob/master/scripts/get_coco_dataset.sh)
+
+
 Yolov3 可以处理物体分类 和 物体检测 2种任务
 
 ## 0. 安装 Darknet
