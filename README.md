@@ -167,7 +167,7 @@ Yolo的训练过程是要先在小图片上通过分类任务训练卷积网络�
 
 Yolov3-PyTorch
 
-
+[YOLOv3: Training and inference in PyTorch](https://github.com/ultralytics/yolov3)
 
 [Minimal PyTorch implementation of YOLOv3](https://github.com/eriklindernoren/PyTorch-YOLOv3.git) by eriklindernoren
 
