@@ -2,6 +2,8 @@
 
 [Yolov3 Homepage 主页](https://pjreddie.com/darknet/yolo/)
 
+[Pascal VOC Dataset Mirror](https://pjreddie.com/projects/pascal-voc-dataset-mirror/)
+
 Yolov3 可以处理物体分类 和 物体检测 2种任务
 
 ## 0. 安装 Darknet
