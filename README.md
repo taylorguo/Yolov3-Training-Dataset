@@ -69,4 +69,41 @@ detect 命令是简写, 完整命令如下所示 :
 
 #### 1.A.3 摄像头实时监测
 
-检测摄像头视频, [Darknet编译时需要启用CUDA和OpenCV]()
+检测摄像头视频, [Darknet编译时需要启用CUDA和OpenCV](https://pjreddie.com/darknet/install/#cuda).
+
+编译后, 运行 :
+
+```
+./darknet detector demo cfg/coco.data cfg/yolov3.cfg yolov3.weights
+```
+
+### 1.B 数据集上的训练
+
+#### 1.B.1 获取数据, 可以下载[VOC 2007-2012的所有数据](https://pjreddie.com/projects/pascal-voc-dataset-mirror/)
+
+下载并解压数据:
+
+```
+wget https://pjreddie.com/media/files/VOCtrainval_11-May-2012.tar
+wget https://pjreddie.com/media/files/VOCtrainval_06-Nov-2007.tar
+wget https://pjreddie.com/media/files/VOCtest_06-Nov-2007.tar
+tar xf VOCtrainval_11-May-2012.tar
+tar xf VOCtrainval_06-Nov-2007.tar
+tar xf VOCtest_06-Nov-2007.tar
+```
+
+#### 1.B.2 生成数据标注
+
+Darknet读取每张图片的.txt标注文件, .txt文件中的数据格式如下:
+
+```
+<object-class> <x> <y> <width> <height>
+```
+
+<font color=blue> 每张图片都需要一个.txt标注文件</font>.
+
+x, y, width, height 是图像标注的坐标尺寸.
+
+```
+Darknet/scripts/voc_label.py   文件可以生成这样的.txt文件.
+```
