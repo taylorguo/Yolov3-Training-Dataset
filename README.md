@@ -51,7 +51,9 @@ wget https://pjreddie.com/media/files/yolov3-tiny.weights
 
 <img src="./assets/tiny_detector_result.jpg" width=400>
 
-Darknet 打印出了运行时间, 检测到的物体, 和概率. Darknet并没有和OpenCV一起编译, 所以无法直接显示图片, 而是将图片保存在磁盘.
+Darknet 打印出了运行时间, 检测到的物体, 和概率. 
+
+Darknet并没有和OpenCV一起编译, 所以无法直接显示图片, 而是将图片保存在磁盘.
 
 detect 命令是简写, 完整命令如下所示 :
 
@@ -64,3 +66,7 @@ detect 命令是简写, 完整命令如下所示 :
 ```
 ./darknet detect cfg/yolov3.cfg yolov3.weights data/dog.jpg -thresh 0
 ```
+
+#### 1.A.3 摄像头实时监测
+
+检测摄像头视频, [Darknet编译时需要启用CUDA和OpenCV]()
