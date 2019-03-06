@@ -100,10 +100,56 @@ Darknet读取每张图片的.txt标注文件, .txt文件中的数据格式如下
 <object-class> <x> <y> <width> <height>
 ```
 
-<font color=blue> 每张图片都需要一个.txt标注文件</font>.
-
 x, y, width, height 是图像标注的坐标尺寸.
 
 ```
 Darknet/scripts/voc_label.py   文件可以生成这样的.txt文件.
+```
+
+```
+ls
+2007_test.txt   VOCdevkit
+2007_train.txt  voc_label.py
+2007_val.txt    VOCtest_06-Nov-2007.tar
+2012_train.txt  VOCtrainval_06-Nov-2007.tar
+2012_val.txt    VOCtrainval_11-May-2012.tar
+```
+
+Darknet只能读取一个.txt文件, 里面包含了所有要训练的图片这样的标注信息.
+```
+cat 2007_train.txt 2007_val.txt 2012_*.txt > train.txt
+```
+
+以上就是准备的要训练的数据.
+
+#### 1.B.3 修改训练配置文件
+
+修改 Darknet/cfg/voc.data 配置文件, 匹配刚才准备好的数据:
+
+```
+  1 classes= 20
+  2 train  = <path-to-voc>/train.txt
+  3 valid  = <path-to-voc>2007_test.txt
+  4 names = data/voc.names
+  5 backup = backup
+```
+
+#### 1.B.4 下载预训练的卷积权重文件
+
+Yolo的训练过程是要先在小图片上通过分类任务训练卷积网络的特征提取权重, 
+
+再用大图片对分类模型进行微调,
+
+然后使用大图片训练检测任务.
+
+可以使用Imagenet上预训练的卷积权重.
+
+比如, 使用 [darknet53](https://pjreddie.com/darknet/imagenet/#darknet53)模型权重.
+
+只需要下载 [卷积层权重](https://pjreddie.com/media/files/darknet53.conv.74).
+
+#### 1.B.5 训练新模型
+
+```
+./darknet detector train cfg/voc.data cfg/yolov3-voc.cfg darknet53.conv.74
 ```
