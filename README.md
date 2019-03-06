@@ -12,9 +12,11 @@ cd darknet
 make
 ```
 
-## 1-A 物体检测 Object Detection
+## 1. 物体检测 Object Detection
 
-#### 1-A.1 使用预训练的模型进行检测 (直接做推断)
+### 1.A 推断
+
+#### 1.A.1 使用预训练的模型进行检测 (直接做推断)
 
 安装Darknet之后, 在克隆好的文件目录中, 存在cfg/子目录. 可以将[预训练的权重文件](https://pjreddie.com/media/files/yolov3.weights)下载到该目录。
 
@@ -25,7 +27,7 @@ make
 wget https://pjreddie.com/media/files/yolov3.weights
 ```
 
-#### 1-A.2 检测指定的图片
+#### 1.A.2 检测指定的图片
 
 直接运行如下命令:
 
@@ -34,3 +36,6 @@ wget https://pjreddie.com/media/files/yolov3.weights
 运行后, 显示网络结构 和 推断的结果:
 
 <img src="./assets/tiny_detector_output.jpg" width=600>
+
+
+![](./assets/tiny_detector_result.jpg)
