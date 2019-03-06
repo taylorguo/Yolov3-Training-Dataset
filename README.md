@@ -35,12 +35,13 @@ wget https://pjreddie.com/media/files/yolov3-tiny.weights
 
 直接运行如下命令:
 
+```
 ./darknet detect cfg/yolov3.cfg yolov3.weights data/dog.jpg
 
 或者
 
 ./darknet detect cfg/yolov3-tiny.cfg yolov3-tiny.weights data/dog.jpg
-
+```
 
 运行后, 显示(Yolov3-tiny)网络结构 :
 
