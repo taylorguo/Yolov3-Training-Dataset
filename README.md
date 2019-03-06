@@ -32,4 +32,5 @@ wget https://pjreddie.com/media/files/yolov3.weights
 ./darknet detect cfg/yolov3.cfg yolov3.weights data/dog.jpg
 
 运行后, 显示网络结构 和 推断的结果:
-<img src="./assets/tiny_detector_output.jpg" width=400>
+
+<img src="./assets/tiny_detector_output.jpg" width=600>
