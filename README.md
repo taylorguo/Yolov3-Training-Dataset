@@ -1,4 +1,4 @@
-# Yolov3-Darknet-Training-Dataset
+# Yolov3-Training-Dataset
 
 [Yolov3 Homepage 主页](https://pjreddie.com/darknet/yolo/)
 
@@ -161,3 +161,13 @@ Yolo的训练过程是要先在小图片上通过分类任务训练卷积网络�
 ```
 ./darknet detector train cfg/voc.data cfg/yolov3-voc.cfg darknet53.conv.74
 ```
+
+
+================================
+
+Yolov3-PyTorch
+
+
+
+[Minimal PyTorch implementation of YOLOv3](https://github.com/eriklindernoren/PyTorch-YOLOv3.git) by eriklindernoren
+
