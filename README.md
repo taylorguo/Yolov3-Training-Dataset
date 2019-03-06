@@ -153,6 +153,9 @@ Yolo的训练过程是要先在小图片上通过分类任务训练卷积网络�
 
 只需要下载 [卷积层权重](https://pjreddie.com/media/files/darknet53.conv.74).
 
+并没有看到Yolov3-tiny的卷积层权重, 需要从头训练. 🐍🐍🐍🐍
+
+
 #### 1.B.5 训练新模型
 
 ```
