@@ -1078,8 +1078,32 @@ Yolo的训练过程是要先在小图片上通过分类任务训练卷积网络�
         None
         Saved Keras model to model_data/yolo.h5
         Read 62001757 of 62001757.0 from Darknet weights.
-        (keras_flask) ➜  keras-yolo3-qqwweee git:(master) ✗ pwd                                                           
+        
+        
+        (keras_flask) ➜  keras-yolo3-qqwweee git:(master) ✗ python yolo_video.py --image --input /Users/taylorguo/Documents/Innotech/yolo_video/video_fss/yolov3/data/samples
+        Using TensorFlow backend.
+        Image detection mode
+        
+        Input image filename:/Users/taylorguo/Documents/Innotech/yolo_video/video_fss/yolov3/data/samples/manlife.jpg
+        (416, 416, 3)
+        Found 7 boxes for img
+        person 0.96 (78, 394) (235, 485)
+        person 0.99 (828, 150) (1006, 491)
+        person 0.99 (1001, 184) (1186, 507)
+        person 1.00 (377, 168) (477, 493)
+        person 1.00 (669, 132) (831, 494)
+        person 1.00 (260, 217) (342, 498)
+        person 1.00 (510, 134) (644, 490)
+        3.515515408013016
+        Input image filename:/Users/taylorguo/Documents/Innotech/yolo_video/video_fss/yolov3/data/samples/jumpoversea.jpg    
+        (416, 416, 3)
+        Found 1 boxes for img
+        person 0.99 (294, 186) (598, 426)
+        1.3040821250178851
+        
+        (keras_flask) ➜  keras-yolo3-qqwweee git:(master) ✗ pwd
         /Users/taylorguo/Documents/project2019_mar/yolov3/keras-yolo3-qqwweee
+
         ```
 
   - YOLOv3-Keras
