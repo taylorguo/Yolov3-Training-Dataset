@@ -327,7 +327,7 @@ Yolo的训练过程是要先在小图片上通过分类任务训练卷积网络�
 
     [Minimal PyTorch implementation of YOLOv3](https://github.com/eriklindernoren/PyTorch-YOLOv3.git) by eriklindernoren
 
-    [YOLO_v3_tutorial_from_scratch](https://github.com/ayooshkathuria/YOLO_v3_tutorial_from_scratch), [Tutorial](https://blog.paperspace.com/how-to-implement-a-yolo-object-detector-in-pytorch/), [Code Repo](https://github.com/ayooshkathuria/pytorch-yolo-v3)
+    [YOLO_v3_tutorial_from_scratch](https://github.com/ayooshkathuria/YOLO_v3_tutorial_from_scratch),     [Tutorial](https://blog.paperspace.com/how-to-implement-a-yolo-object-detector-in-pytorch/),       [Code Repo](https://github.com/ayooshkathuria/pytorch-yolo-v3),       [从零开始PyTorch项目：YOLO v3目标检测实现](https://mp.weixin.qq.com/s?__biz=MzA3MzI4MjgzMw==&mid=2650741259&idx=1&sn=03dfb0fa3396e5464fc358b5a803e7bf&chksm)
 
 
 ### Keras 实现
