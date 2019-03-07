@@ -183,10 +183,14 @@ Yolo的训练过程是要先在小图片上通过分类任务训练卷积网络�
 
   - YOLOv2-Keras
 
-    [YAD2K: Yet Another Darknet 2 Keras](https://github.com/allanzelener/YAD2K)
+    [YAD2K: Yet Another Darknet 2 Keras](https://github.com/allanzelener/YAD2K) - by allanzelener
 
 
   - YOLOv3-Keras
 
-    [A Keras implementation of YOLOv3 (Tensorflow backend)](https://github.com/qqwweee/keras-yolo3)
+    [A Keras implementation of YOLOv3 (Tensorflow backend)](https://github.com/qqwweee/keras-yolo3) - by qqwweee
 
+
+  - YOLOv3-Keras
+
+    [Training and Detecting Objects with YOLO3](https://github.com/experiencor/keras-yolo3) - by experiencor
