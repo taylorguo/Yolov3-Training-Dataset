@@ -353,7 +353,7 @@ Yolo的训练过程是要先在小图片上通过分类任务训练卷积网络�
         Parsing section net_0
         Parsing section convolutional_0
         conv2d bn leaky (3, 3, 3, 32)
-        WARNING:tensorflow:From /anaconda3/envs/keras_flask/lib/python3.6/site-packages/keras/backend/tensorflow_backend.py:1242: calling reduce_sum (from tensorflow.python.ops.math_ops) with keep_dims is deprecated and will be removed in a future version.
+        
         Instructions for updating:
         keep_dims is deprecated, use keepdims instead
         2019-03-07 16:12:02.602582: I tensorflow/core/platform/cpu_feature_guard.cc:141] Your CPU supports instructions that this TensorFlow binary was not compiled to use: AVX2 FMA
@@ -539,6 +539,7 @@ Yolo的训练过程是要先在小图片上通过分类任务训练卷积网络�
         Parsing section convolutional_74
         conv2d    linear (1, 1, 256, 255)
         Parsing section yolo_2
+        
         __________________________________________________________________________________________________
         Layer (type)                    Output Shape         Param #     Connected to                     
         ==================================================================================================
@@ -1095,6 +1096,7 @@ Yolo的训练过程是要先在小图片上通过分类任务训练卷积网络�
         person 1.00 (260, 217) (342, 498)
         person 1.00 (510, 134) (644, 490)
         3.515515408013016
+
         Input image filename:/Users/taylorguo/Documents/Innotech/yolo_video/video_fss/yolov3/data/samples/jumpoversea.jpg    
         (416, 416, 3)
         Found 1 boxes for img
