@@ -298,6 +298,10 @@ Yolo的训练过程是要先在小图片上通过分类任务训练卷积网络�
 ## 2. 代码实现
 
 
+    - [Windows and Linux version of Darknet Yolo v3 & v2 Neural Networks for object detection (Tensor Cores are used)](https://github.com/AlexeyAB/darknet)
+
+
+
 ### PyTorch 实现
 
   - YOLOv3-PyTorch
